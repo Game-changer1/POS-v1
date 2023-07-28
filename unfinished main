@@ -1,0 +1,28 @@
+
+while(True):
+  #this is the welcome message.
+  print( """"
+  Welcome to ABC Electronics \n
+  1. Inventory items  Items
+  2. Bought Items
+  3. Exit
+    """")
+  #for the first option
+  #since we want numbers only we add int.
+  choice = int(input('enter yout option = '))
+  if choice == 1:
+       print("----------------")
+       print("Items in inventory")
+       data = open("inventory.txt", "r") #the inventory.txt is the file where the product info is stored.
+       items = data.readlines() #to read the items in the list
+        print("----------------")
+       for item in items:  #to read the individual items.
+          name, model, price, count = item.split(",")
+          print("{0}\t{1}\t{2}" .format(name,model,price,count))
+          print("----------------")
+    elif choice ==2
+         Print("Item Payments")
+    elif choice == 3
+         break
+    else:
+         break
