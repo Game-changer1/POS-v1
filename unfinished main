@@ -2,10 +2,13 @@
 while(True):
   #this is the welcome message.
   print( """"
-  Welcome to ABC Electronics \n
+  Welcome to Backlight Electronics \n
   1. Inventory items  Items
-  2. Bought Items
-  3. Exit
+  2. Received Items
+  3. Awaiting Collection
+  4. Collected Items
+  5. Return Items
+  6. Exit
     """")
   #for the first option
   #since we want numbers only we add int.
@@ -22,7 +25,13 @@ while(True):
           print("----------------")
     elif choice ==2
          Print("Item Payments")
-    elif choice == 3
+    elif choice ==3
+         Print("Awaiting Collection")
+    elif choice ==4
+         Print("Collected Item")
+    elif choice ==5
+         Print("Return Items")
+    elif choice == 6
          break
     else:
          break
