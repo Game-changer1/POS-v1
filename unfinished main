@@ -1,12 +1,15 @@
 
 while(True):
   #this is the welcome message.
-  print( """"
-  Welcome to ABC Electronics \n
-  1. Inventory items  Items
-  2. Bought Items
-  3. Exit
-    """")
+  
+  print("Welcome to Backlight Electronics \n")         
+  print("1. Inventory items  Items")        
+  print("2. Received Items")         
+  print("3. Awaiting Collection")         
+  print("4.Collected Items")     
+  print("5. Return Items")       
+  print("6. Exit")        
+  
   #for the first option
   #since we want numbers only we add int.
   choice = int(input('enter yout option = '))
@@ -15,14 +18,24 @@ while(True):
        print("Items in inventory")
        data = open("inventory.txt", "r") #the inventory.txt is the file where the product info is stored.
        items = data.readlines() #to read the items in the list
-        print("----------------")
+       print("----------------")
        for item in items:  #to read the individual items.
           name, model, price, count = item.split(",")
           print("{0}\t{1}\t{2}" .format(name,model,price,count))
           print("----------------")
-    elif choice ==2
+  elif choice == 2
          Print("Item Payments")
-    elif choice == 3
          break
-    else:
+  elif choice == 3
+         Print("Awaiting Collection")
+         break
+  elif choice == 4
+         Print("Collected Item")
+         break
+  elif choice ==5
+         Print("Return Items")
+         break
+  elif choice == 6
+         break
+  else:
          break
